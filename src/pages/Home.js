@@ -1,5 +1,11 @@
-const Home =() => {
+import Body from '../components/Body'
 
-    return <h1>Acceuil</h1>
-};
+
+
+const Home =() => (
+        <section>
+            <Body />
+        </section>
+
+);
 export default Home;

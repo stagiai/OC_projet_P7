@@ -1,0 +1,48 @@
+.error {
+    height: 263px;
+    width: 597px;
+    left: 432px;
+    top: 277px;
+    position: absolute;
+    border-radius: 0px;
+    border: black solid 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    /* or 411px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FF6060;
+
+}
+
+.message {
+    height: 51px;
+    width: 872px;
+    left: 400px;
+    top: 800px;
+    position: absolute;
+    border-radius: nullpx;
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    /* or 51px */
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #FF6060;
+}
+
+.link {
+    
+}
