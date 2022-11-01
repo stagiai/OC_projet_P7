@@ -4,7 +4,7 @@
     height: 68px;
     left: 100px;
     top: 40px;
-    border: black 3px solid;
+
     display: flex;
     flex-direction: row;
     justify-content:space-between;

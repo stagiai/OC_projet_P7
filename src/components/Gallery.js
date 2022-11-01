@@ -1,11 +1,11 @@
 import '../styles/Gallery.css'
-import Item from './Item'
+import Card from './Card'
 
 const Gallery = (props) => (
 
     <div className='gallery'>
-        {props.list.map((item) => (
-            <Item key={item.id} item={item} />
+        {props.list.map((card) => (
+            <Card key= {card.id} card= {card} />
         ))}
     </div>
 );

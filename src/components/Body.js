@@ -1,13 +1,13 @@
-import '../styles/Body.css'
+import '../styles/Home.css'
 import '../styles/Gallery.css'
-import Title from './Title'
+import HomeMaskgroup from './HomeMaskgroup'
 import Gallery from './Gallery'
 import {housingList} from '../datas/housingList'
 
 const Body = () => {
     return (
     <div className="body">
-        <Title />
+        <HomeMaskgroup />
         <Gallery list = {housingList} />
     </div>
     )

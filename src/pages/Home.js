@@ -3,9 +3,8 @@ import Body from '../components/Body'
 
 
 const Home =() => (
-        <section>
-            <Body />
-        </section>
+
+    <Body />
 
 );
 export default Home;

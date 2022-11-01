@@ -1,12 +1,13 @@
 .body {
-    height: 1095px;
+    
+    display: flex;
+    flex-direction: column;
     width: 1240px;
     left: 100px;
     top: 171px;
     position: absolute;
-    border: black 3px solid;
-    display: flex;
-    flex-direction: column;
+
+
 }
 
 section {
@@ -18,7 +19,7 @@ section {
 
 }
 
-.maskgroup {
+.home-maskgroup {
     height: 223px;
     width: 1240px;
     left: 0px;
@@ -31,7 +32,7 @@ section {
     position: absolute;
     left: 25.9%;
     right: 25.14%;
-    top: 24.32%;
+    top: 40%;
     bottom: 69.04%;    
 
     font-family: 'Montserrat';
