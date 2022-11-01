@@ -1,6 +1,6 @@
 import Navbar from './Navbar'
 import logo_header from '../assets/logo_header.png'
-import '../styles/Header.css'
+import '../styles/SharedLayout.css'
 
 const Header = () => {
     return (

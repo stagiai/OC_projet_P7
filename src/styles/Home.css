@@ -1,49 +1,73 @@
 .body {
-    
     display: flex;
     flex-direction: column;
-    width: 1240px;
-    left: 100px;
-    top: 171px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top: 15%;
     position: absolute;
+}
 
+.body .gallery {
+    width: 100%;
+    border-radius: 25px;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.gallery .card {
+    height: 250px;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
 
 }
 
-section {
-    height: 223px;
-    width: 1240px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-
-}
-
-.home-maskgroup {
-    height: 223px;
-    width: 1240px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-
-}
-
-.title {
-    position: absolute;
-    left: 25.9%;
-    right: 25.14%;
-    top: 40%;
-    bottom: 69.04%;    
+.card-title {
+    position: relative;
+    left: 5%;
+    right: 15%;
+    top: 60.82%;
+    bottom: 5.88%;
+   
 
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 12px;
     line-height: 142.6%;
-    /* or 68px */
+    /* or 26px */
 
     display: flex;
     align-items: flex-end;
+
+    color: #FFFFFF;
+}
+
+
+.body .homeMaskGroup {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeMaskGroup .title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    /* or 68px */
 
     color: #FFFFFF;
 }

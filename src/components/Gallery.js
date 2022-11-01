@@ -1,4 +1,4 @@
-import '../styles/Gallery.css'
+import '../styles/Home.css'
 import Card from './Card'
 
 const Gallery = (props) => (
