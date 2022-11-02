@@ -2,6 +2,8 @@ import {useParams} from 'react-router-dom'
 import Carousel from '../components/Carousel';
 import {housingList} from '../datas/housingList';
 import '../styles/Housing.css'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 const Housing = () => {
@@ -10,6 +12,7 @@ const Housing = () => {
     console.log(housing);
     return (
         <div className='housing'>
+            <Header />
             <Carousel housing= {housing}/>
             <h1>{housing.title}</h1>
             <h4>{housing.host.name}</h4>
@@ -19,6 +22,7 @@ const Housing = () => {
             <p>{housing.description}</p>
             <p>{housing.equipments}</p>
             <h1>{cardID}</h1>
+            <Footer />
         </div>
 
     )

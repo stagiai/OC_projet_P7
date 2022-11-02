@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
 .housing {
     width: 100%;
 
@@ -9,8 +11,9 @@
 }
 
 .housing .carousel {
-    width: 100%;
+    width: 90%;
     height: 300px;
+    margin-top: 30px;
 
 }
 

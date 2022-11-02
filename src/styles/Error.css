@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
 .error {
+    width: 100%;
+}
+
+.errorCode {
     height: 263px;
-    width: 597px;
+    width: 10%;
     left: 432px;
     top: 100px;
     position: absolute;
@@ -21,7 +27,7 @@
 
 }
 
-.message {
+.errorMessage {
     height: 51px;
     width: 872px;
     left: 400px;

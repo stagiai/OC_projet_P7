@@ -1,5 +1,5 @@
 import logo_footer from '../assets/logo_footer.png'
-import '../styles/SharedLayout.css'
+import '../styles/Footer.css'
 
 const Footer = () => {
     return (
