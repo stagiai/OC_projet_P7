@@ -1,36 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
 .sharedLayout {
     width: 100vw;
-    height: 100vh;
+    height: 850vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(47, 122, 147, 0);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
+
 }
 
 .sharedLayout .header {
-    position: absolute;
-    top: 15px; 
-    width: 100%;
-    height: 10%;
+    height: 50px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    margin: 1%;
+    border: black 2px solid;
 }
 
-.header .navbar {
+.sharedLayout .header .navbar {
     width: 40%;
-    height: 100%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.header .logo {
+.sharedLayout .header .logo {
     width: 35%;
 }
 
@@ -46,25 +48,28 @@
 }
 
 .sharedLayout .footer {
-    height: 20%;
+    height: 250px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    align-items:center;
+    justify-content: center;
     border-radius: 0px;
-    background-color: grey;
+    background-color: black;
 
 }
 
-
-
-.footer .text {
+.sharedLayout .footer .text {
+    width: 100%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
-    color: #FFFFFF;
+    font-size: 14px;
+    color: white;
+}
+
+.sharedLayout .footer .footerLogo {
+    width: 100px;
+    height: auto;
 }
 

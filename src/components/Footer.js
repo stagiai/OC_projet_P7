@@ -4,9 +4,9 @@ import '../styles/SharedLayout.css'
 const Footer = () => {
     return (
         <div className='footer'>
-
-            <img src= {logo_footer} alt= 'logo de Kasa' />
-
+            <div>
+                <img src= {logo_footer} alt= 'logo de Kasa' className='footerLogo'/>
+            </div>
             <p className='text'>2020 Kasa. All rights reserved</p>
         </div>
 

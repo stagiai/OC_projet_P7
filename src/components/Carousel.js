@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../styles/Carousel.css'
+import '../styles/Housing.css'
 import arrowforward from '../assets/arrowforward.png'
 import arrowbackward from '../assets/arrowbackward.png'
 

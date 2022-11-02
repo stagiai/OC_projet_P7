@@ -6,9 +6,9 @@ import '../styles/SharedLayout.css'
 
 const SharedLayout = () => (
     <div className='sharedLayout'>
-        <Header />
-        <Outlet />
-        <Footer />
+        <Header  className='header' />
+        <Outlet className= 'outlet' />
+        <Footer className= 'footer' />
     </div>
 );
 

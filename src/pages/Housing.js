@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom'
 import Carousel from '../components/Carousel';
-import {housingList} from '../datas/housingList'
+import {housingList} from '../datas/housingList';
+import '../styles/Housing.css'
 
 
 const Housing = () => {
@@ -8,7 +9,7 @@ const Housing = () => {
     const housing = housingList.find((housing) => housing.id === cardID);
     console.log(housing);
     return (
-        <>
+        <div className='housing'>
             <Carousel housing= {housing}/>
             <h1>{housing.title}</h1>
             <h4>{housing.host.name}</h4>
@@ -18,8 +19,7 @@ const Housing = () => {
             <p>{housing.description}</p>
             <p>{housing.equipments}</p>
             <h1>{cardID}</h1>
-
-        </>
+        </div>
 
     )
 
