@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../styles/Housing.css'
+import CarouselCSS from '../styles/Carousel.module.css'
 import arrowforward from '../assets/arrowforward.png'
 import arrowbackward from '../assets/arrowbackward.png'
 
@@ -7,8 +7,8 @@ function Carousel(props) {
     const [currImg, setCurrImg] = useState(0);
     if(props.housing.pictures.length <=1) {
         return (
-            <div className='carousel'>
-                <div className='carouselInner'
+            <div className= {CarouselCSS.carousel} >
+                <div className= {CarouselCSS.carouselInner}
                     style= {{backgroundImage:`url(${props.housing.cover})`}}>
                 </div>
             </div>
@@ -17,10 +17,10 @@ function Carousel(props) {
     } else {
 
         return (
-            <div className='carousel'>
-                <div className='carouselInner'
+            <div className= {CarouselCSS.carousel}>
+                <div className= {CarouselCSS.carouselInner}
                     style= {{backgroundImage:`url(${props.housing.pictures[currImg]})`}}>
-                        <div className='left' onClick={() => {
+                        <div className= {CarouselCSS.left} onClick={() => {
                             if (currImg === 0) {
                                 setCurrImg(props.housing.pictures.length-1);
                             } else {
@@ -28,10 +28,10 @@ function Carousel(props) {
                             }
     
                         }}>
-                            <img src= {arrowbackward} alt= 'backward arrow'/>
+                            <img src= {arrowbackward} alt= 'backward arrow' className= {CarouselCSS.arrowbackward} />
                         </div>
-                        <div className='center'></div>
-                        <div className='right' onClick={() => {
+                        <div className= {CarouselCSS.center}></div>
+                        <div className= {CarouselCSS.right} onClick={() => {
                             if (currImg === props.housing.pictures.length-1) {
                                 setCurrImg(0);
                             } else {
@@ -39,7 +39,7 @@ function Carousel(props) {
                             }
     
                         }}>
-                            <img src= {arrowforward} alt= 'forward arrow'/>
+                            <img src= {arrowforward} alt= 'forward arrow' className= {CarouselCSS.arrowforward}/>
                         </div>
                 </div>
                 

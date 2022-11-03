@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+
+.gallery {
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+    background-color: rgb(241, 241, 241);
+}
+
+
+/*====================media queries=================*/
+
+@media screen and (max-width: 1380px) {
+
+}
+
+@media screen and (max-width: 990px) {
+
+}
+
+
+@media screen and (max-width: 440px) {
+    .gallery {
+        background-color: white;
+    }
+    
+}

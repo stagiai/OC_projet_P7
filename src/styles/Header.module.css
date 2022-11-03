@@ -1,0 +1,44 @@
+.header {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.navbar {
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+    max-width: 200px;
+    height: auto;
+}
+
+
+
+.title {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060;
+    text-align: right;
+    text-decoration-line: unset;
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 18px;
+    }
+}
