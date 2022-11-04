@@ -7,6 +7,8 @@ import HousingCSS from '../styles/Housing.module.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Collapse from '../components/Collapse'
+import host from '../assets/host.jpg'
+import Rating from '../components/Rating'
 
 
 const Housing = () => {
@@ -21,20 +23,28 @@ const Housing = () => {
 //    if (!housing) {
 //        navigate("/error");
 //     }
-    console.log(housing);
+    console.log(housing.tags);
     return (
         <div className= {HousingCSS.housing} >
             <Header />
             <Carousel housing= {housing}/>
             <div className= {HousingCSS.main} >
-                <div className= {HousingCSS.main1} >
+                <div className= {HousingCSS.mainTitle} >
                     <h2 className= {HousingCSS.title} >{housing.title}</h2>
                     <h4 className= {HousingCSS.location} >{housing.location}</h4>
-                    <p>{housing.tags}</p>
+                    <ul className= {HousingCSS.tags} >{
+                        housing.tags.map((item) => {
+                            <li>{item}</li>
+                        })
+                    }</ul>
                 </div>
-                <div className= {HousingCSS.main2} >
-                    <h4 className= {HousingCSS.hostName} >{housing.host.name}</h4>
-                    <p>{housing.rating}</p>
+                <div className= {HousingCSS.mainHost} >
+                    <div className= {HousingCSS.host}>
+                        <div className= {HousingCSS.left}></div>
+                        <div className= {HousingCSS.hostName} >{housing.host.name}</div>
+                        <img src= {host} className= {HousingCSS.hostImg} />
+                    </div>
+                    <div className= {HousingCSS.rating}><Rating rating={housing.rating} /></div>
                 </div>
             </div>
             <div className= {HousingCSS.details} >

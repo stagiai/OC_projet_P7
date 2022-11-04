@@ -3,6 +3,8 @@
     height: 700px;
     border-radius: 25px;
     margin-top: 25px;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 .carouselInner {
@@ -12,6 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+
 }
 
 
