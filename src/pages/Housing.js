@@ -1,6 +1,5 @@
 import React from 'react';
-import {useParams} from 'react-router-dom';
-//import {useNavigate} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import Carousel from '../components/Carousel'
 import {housingList} from '../datas/housingList';
 import HousingCSS from '../styles/Housing.module.css'
@@ -15,16 +14,13 @@ const Housing = () => {
 
     const title1= 'Description';
     const title2= 'Equipements';
+    const navigate = useNavigate();
     
     const {cardID} = useParams();
-//    const navigate = useNavigate();
 
     const housing = housingList.find((housing) => housing.id === cardID);
-//    if (!housing) {
-//        navigate("/error");
-//     }
-    console.log(housing.tags);
-    return (
+
+    return !housing ? navigate('/error') : 
         <div className= {HousingCSS.housing} >
             <Header />
             <Carousel housing= {housing}/>
@@ -32,11 +28,11 @@ const Housing = () => {
                 <div className= {HousingCSS.mainTitle} >
                     <h2 className= {HousingCSS.title} >{housing.title}</h2>
                     <h4 className= {HousingCSS.location} >{housing.location}</h4>
-                    <ul className= {HousingCSS.tags} >{
-                        housing.tags.map((item) => {
-                            <li>{item}</li>
-                        })
-                    }</ul>
+                    <div className= {HousingCSS.tags} >{
+                        housing.tags.map((item) => 
+                            <li  className= {HousingCSS.tagsItem}>{item}</li>
+                        )
+                    }</div>
                 </div>
                 <div className= {HousingCSS.mainHost} >
                     <div className= {HousingCSS.host}>
@@ -49,18 +45,19 @@ const Housing = () => {
             </div>
             <div className= {HousingCSS.details} >
                 <div className= {HousingCSS.collapse}>
-                    <Collapse title={title1} text= {housing.description}   />
+                    <Collapse title={title1} content= {housing.description}   />
                 </div>
                 <div className= {HousingCSS.collapse}>
-                    <Collapse title={title2} text= {housing.equipments}  />
+                    <Collapse title={title2} content= {
+                        <ul className= {HousingCSS.equipments}>
+                            {housing.equipments.map((item) =>
+                                <li>{item}</li>)
+                            }           
+                        </ul>
+                    }  />
                 </div>
-
-
             </div>           
             <Footer />
-        </div>
-
-    )
-
+        </div>        
 };
 export default Housing;

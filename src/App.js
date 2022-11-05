@@ -10,10 +10,10 @@ function App() {
         <BrowserRouter>
 
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='about' element={<About />} />
+                <Route exact path='/' element={<Home />} />
+                <Route exact path='/about' element={<About />} />
                 <Route path='/:cardID' element={<Housing />} />
-                <Route path='*' element={<Error />} />              
+                <Route path='/error' element={<Error />} />              
             </Routes>
 
         </BrowserRouter>

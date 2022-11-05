@@ -39,9 +39,25 @@
 }
 
 .tags {
+    width: 50%;
     display: flex;
     height: auto;
-    flex-direction: column;
+    flex-direction: row;
+    list-style-type: none;    
+    justify-content: left;
+    margin-bottom: 20px;    
+}
+
+.tagsItem {
+    display: flex;
+    width: 120%;
+    height: 30px;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
 }
 
 .mainHost {
@@ -95,9 +111,25 @@
 
 }
 
+.equipments {
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 300;
+    background-color: rgb(245, 245, 245);
+}
+
 .collapse {
     width: 45%;
     min-width: 400px;
+}
+
+.content {
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+    font-size: 24px;
+    font-weight: 300;
+    color: #FF6060;
 }
 
 

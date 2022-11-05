@@ -35,5 +35,15 @@
     justify-content: space-between;
 }
 
+.content {
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+    font-size: 24px;
+    font-weight: 300;
+    color: #FF6060;
+    background-color: rgb(245, 245, 245);
+}
+
 
 

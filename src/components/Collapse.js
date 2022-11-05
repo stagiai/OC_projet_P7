@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../styles/Collapse.css'
+import CollapseCSS from '../styles/Collapse.module.css'
 import vector_open from '../assets/vector-to-open.png'
 //import vector_close from '../assets/vector-to-close.png'
 
@@ -11,12 +11,12 @@ const Collapse = (props) => {
     };
   
     return (
-      <div className="description">
-          <div className="head">
-            <h1 className="title">{props.title}</h1>
-            <div className="right" onClick={handleOpen}><img src= {vector_open} className='vector'  /></div>
+      <div className= {CollapseCSS.description}>
+          <div className= {CollapseCSS.head}>
+            <div className= {CollapseCSS.title}>{props.title}</div>
+            <div className= {CollapseCSS.right} onClick={handleOpen}><img src= {vector_open} className= {CollapseCSS.vector}  /></div>
           </div>
-          {open ? <div className="text">{props.text}</div> : null}
+          {open ? <div className={CollapseCSS.content}>{props.content}</div> : null}
       </div>
     );
   };
