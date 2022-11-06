@@ -24,6 +24,10 @@
     cursor: pointer;
 }
 
+.right:active > .title {
+    color: black;
+}
+
 .title {
     flex: 90%;
 }

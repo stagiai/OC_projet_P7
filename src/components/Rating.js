@@ -1,4 +1,5 @@
 import { FaStar} from 'react-icons/fa'
+
 import RatingCSS from '../styles/Rating.module.css'
 
 const Rating = (props) => {
@@ -7,7 +8,7 @@ const Rating = (props) => {
     return (
         <div>
             {range.map((rangeElem) =>
-                rating >= rangeElem ? <span key={rangeElem.toString()}><FaStar className= {RatingCSS.ratingColor}  /></span> : <span key={rangeElem.toString()}><FaStar className= {RatingCSS.notRatingColor}  /></span>
+                rating >= rangeElem ? <span key={rangeElem.toString()}><FaStar className= {RatingCSS.rating}  /></span> : <span key={rangeElem.toString()}><span></span><FaStar className= {RatingCSS.notRating}  /></span>
             )}
         </div>
     )
