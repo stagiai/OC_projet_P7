@@ -1,11 +1,12 @@
 
 .card {
-    height: 200px;
-    width: 335px;
-    margin: 40px;
+    height: 285px;
+    width: 350px;
     border-radius: 5px;
     background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
-    display: flex;   
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;   
 }
 
 .title {

@@ -13,10 +13,10 @@ const Collapse = (props) => {
     return (
       <div className= {CollapseCSS.description}>
           <div className= {CollapseCSS.head}>
-            <div className= {CollapseCSS.title}>{props.title}</div>
+            <div className={CollapseCSS.title}  >{props.title}</div>
             <div className= {CollapseCSS.right} onClick={handleOpen}><img src= {vector_open} className= {CollapseCSS.vector}  /></div>
           </div>
-          {open ? <div className={CollapseCSS.content}>{props.content}</div> : null}
+          {open ? <div>{props.content}</div> : null}
       </div>
     );
   };

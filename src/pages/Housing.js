@@ -37,17 +37,18 @@ const Housing = () => {
                     <div className= {HousingCSS.host}>
                         <div className= {HousingCSS.left}></div>
                         <div className= {HousingCSS.hostName} >{housing.host.name}</div>
-                        <img src= {host} className= {HousingCSS.hostImg} />
+                        <img src= {host}  className= {HousingCSS.hostImg} />
                     </div>
                     <div className= {HousingCSS.rating}><Rating rating={housing.rating} /></div>
                 </div>
             </div>
             <div className= {HousingCSS.details} >
                 <div className= {HousingCSS.collapse}>
-                    <Collapse title={title1} content= {housing.description}   />
+                    <Collapse title= {<h4 className={HousingCSS.descriptionTitle}>{title1}</h4>} content ={
+                    <p className={HousingCSS.description}>{housing.description}</p>} />
                 </div>
                 <div className= {HousingCSS.collapse}>
-                    <Collapse title={title2} content= {
+                    <Collapse title={<h4 className={HousingCSS.equipmentTitle}>{title2}</h4>} content= {
                         <ul className= {HousingCSS.equipments}>
                             {housing.equipments.map((item) =>
                                 <li>{item}</li>)

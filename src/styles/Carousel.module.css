@@ -82,6 +82,19 @@
     .carousel {
         height: 300px;
     }
+    .left {
+        background-color: unset;
+    }
+    .right {
+        background-color: unset;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+    .carousel {
+        border-radius: 10px;
+    }
 }
 
 

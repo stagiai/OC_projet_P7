@@ -35,11 +35,17 @@
     justify-content: space-between;
 }
 
+.title {
+    font-size: 24px;
+    margin-left: 20px;
+    color: white;
+}
+
 .content {
-    width: 100%;
     min-width: 350px;
     height: auto;
-    font-size: 24px;
+    margin-left: 20px;
+    font-size: 26px;
     font-weight: 300;
     color: #FF6060;
     background-color: rgb(245, 245, 245);

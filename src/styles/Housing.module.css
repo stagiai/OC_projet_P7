@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
 .housing {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 20px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Montserrat;
-    color: #FF6060;
+
 }
 
 .main {
@@ -18,8 +15,6 @@
     flex-direction: row;
     width: 100%;
     align-items: top;
-    margin-top: 20px;
-
 }
 
 .mainTitle {
@@ -31,18 +26,45 @@
 
 .location {
     font-size: 20px;
+    color: #FF6060;
 }
 
 .title {
     font-size: 36px;
     font-weight: 400;
+    color: #FF6060;
+}
+
+.descriptionTitle {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    background-color: #FF6060;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.equipmentTitle {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    background-color: #FF6060;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+
+
+.location {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .tags {
-    width: 50%;
     display: flex;
     height: auto;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;    
     justify-content: left;
     margin-bottom: 20px;    
@@ -50,14 +72,15 @@
 
 .tagsItem {
     display: flex;
-    width: 120%;
-    height: 30px;
+    width: auto;
+    padding: 0px 25px;
+    height: 25px;
     background-color: #FF6060;
     color: white;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 15px;
 }
 
 .mainHost {
@@ -85,6 +108,7 @@
     text-align: right;
     display: grid;
     place-items: center right;
+    color: #FF6060;
 
 }
 
@@ -100,6 +124,7 @@
     display: flex;
     justify-content: right;
     margin-top: 20px;
+    color: orange;
 }
 
 .details {
@@ -123,7 +148,7 @@
     min-width: 400px;
 }
 
-.content {
+.description {
     width: 100%;
     min-width: 350px;
     height: auto;
@@ -150,6 +175,56 @@
 }
 
 @media screen and (max-width: 750px) {
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main {
+        flex-direction: column;
+    }
+    .mainHost {
+        flex-direction: row-reverse;
+    }
+    .hostName {
+        font-size: 16px;
+    }
+    .hostImg {
+        width: 20px;
+        height: auto;
+    }
+
+    .tagsItem {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+    .descriptionTitle {
+        font-size: 16px;
+    }
+
+    .equipmentTitle {
+        font-size: 16px;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .equipments {
+        font-size: 16px;
+    }
+
+    .collapse {
+        width: 100%;
+    }
 
 }
 

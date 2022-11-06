@@ -26,22 +26,15 @@
 
 .title {
     flex: 90%;
-    font-size: 28px;
-    font-weight: 500;
-    color: white;
-    background-color: #FF6060;
-    margin: 5%;
-    border-radius: 10px;
 }
 
 .vector {
     width: 20px;
     height: auto;
-
 }
 
-.content {
-    background-color: rgb(245, 245, 245);
-    border-radius: 10px;
-    font-size: 22px;
+
+@media screen and (max-width: 450px) {
+
+
 }
