@@ -1,5 +1,5 @@
 import React from 'react';
-import {useNavigate, useParams} from 'react-router-dom';
+import {useParams, Navigate} from 'react-router-dom';
 import Carousel from '../components/Carousel'
 import {housingList} from '../datas/housingList';
 import HousingCSS from '../styles/Housing.module.css'
@@ -14,13 +14,12 @@ const Housing = () => {
 
     const title1= 'Description';
     const title2= 'Equipements';
-    const navigate = useNavigate();
     
     const {cardID} = useParams();
 
     const housing = housingList.find((housing) => housing.id === cardID);
 
-    return !housing ? navigate('/error') : 
+    return !housing ? <Navigate to= '/error' /> : 
         <div className= {HousingCSS.housing} >
             <Header />
             <Carousel housing= {housing}/>
