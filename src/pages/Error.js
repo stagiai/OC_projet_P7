@@ -7,9 +7,9 @@ const Error = () => {
     return (
     <div className= {ErrorCSS.error} >
         <Header />
-        <h1 className= {ErrorCSS.errorCode} >404</h1>
-        <p className= {ErrorCSS.errorMessage} >Oups! La page que vous demandez n'existe pas</p>
-        <Link to ='/' className= {ErrorCSS.link} >Retourner à la page d'accueil</Link>
+        <div className= {ErrorCSS.code} >404</div>
+        <p className= {ErrorCSS.message} >Oups! La page que vous demandez n'existe pas</p>
+        <Link to ='/'  className= {ErrorCSS.link}>Retourner à la page d'accueil</Link>
         <Footer />
     </div>
     )

@@ -2,7 +2,6 @@ import { useState } from "react";
 import CollapseCSS from '../styles/Collapse.module.css'
 import vector_open from '../assets/vector-to-open.png'
 import vector_close from '../assets/vector-to-close.png'
-//import vector_close from '../assets/vector-to-close.png'
 
 const Collapse = (props) => {
     const [open, setOpen] = useState(false);
@@ -16,8 +15,8 @@ const Collapse = (props) => {
           <div className= {CollapseCSS.head}>
             <div className={CollapseCSS.title}  >{props.title}</div>
             <div className= {CollapseCSS.right} onClick={handleOpen}>
-              {!open ? <img src= {vector_open} className= {CollapseCSS.vector}  />
-              : <img src= {vector_close} className= {CollapseCSS.vector}  />}
+              {!open ? <img src= {vector_open} alt= 'arrow downward' className= {CollapseCSS.vector}  />
+              : <img src= {vector_close} alt= 'arrow upward' className= {CollapseCSS.vector}  />}
             </div>
           </div>
           {open ? <div>{props.content}</div> : null}

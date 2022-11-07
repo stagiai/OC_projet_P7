@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
 .housing {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +34,7 @@
 
 .title {
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 500;
     color: #FF6060;
 }
 

@@ -37,6 +37,10 @@
     text-decoration-line: unset;
 }
 
+.title:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 500px) {
     .title {
         font-size: 18px;

@@ -4,62 +4,38 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    font-family: Montserrat;
+    color: #FF6060;
 
 }
 
-.error .errorCode {
-    border: black solid 3px;
-    font-family: 'Montserrat';
+.code {
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    color: #FF6060;
-
+    font-size: 300px;
+    line-height: 400px;
+    margin-top: 150px;
 }
 
-.error .errorMessage {
+.message {
     height: 51px;
-    width: 872px;
-    left: 400px;
-    top: 606px;
-    position: absolute;
-    border-radius: nullpx;
-    
-
-    font-family: 'Montserrat';
+    place-items: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
-    line-height: 142.6%;
-    /* or 51px */
-
+    font-size: 40px;
     display: flex;
     align-items: flex-end;
-
-    color: #FF6060;
 }
 
-.error .link {
+.link {
     height: 26px;
-    width: 284px;
-    left: 578px;
-    top: 839px;
-    border-radius: nullpx;
-    position: absolute;
-    
-
-    font-family: 'Montserrat';
+    width: auto;
+    place-items: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
-    /* identical to box height, or 26px */
-
-    display: flex;
-    align-items: flex-end;
-    text-decoration-line: underline;
-
+    font-size: 26px;
     color: #FF6060;
+    margin-top: 150px;
+    margin-bottom: 200px;
 }
