@@ -2,16 +2,26 @@
 
 
 .gallery {
-    width: 100%;
     border-radius: 25px;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 40px;
+    margin: 40px 0px;
     background-color: #F7F7F7;
 }
+
+.card {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+
 
 
 /*====================media queries=================*/
@@ -28,6 +38,11 @@
 @media screen and (max-width: 440px) {
     .gallery {
         background-color: white;
+        margin: 10px 0px;
+
+    }
+    .card {
+        width: 100%;
     }
     
 }

@@ -9,7 +9,7 @@
 }
 
 .navbar {
-    width: 60%;
+    width: 30%;
     max-width: 500px;
     height: auto;
     display: flex;
@@ -41,8 +41,14 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 440px) {
+    .navbar {
+        width: 60%;
+    }
+    .logo {
+        width: 35%;
+    }
     .title {
-        font-size: 18px;
+        font-size: 14px;
     }
 }

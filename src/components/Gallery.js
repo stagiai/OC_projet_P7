@@ -5,7 +5,10 @@ const Gallery = (props) => (
 
     <div className= {GalleryCSS.gallery}>
         {props.list.map((card) => (
-            <Card key= {card.id} card= {card} />
+            <div  className= {GalleryCSS.card}>
+                <Card key= {card.id} card= {card}  />
+            </div>
+            
         ))}
     </div>
 );

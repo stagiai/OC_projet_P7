@@ -29,14 +29,34 @@
     margin-top: 30px;
 }
 
+.left {
+    flex: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.center {
+    flex: 0%;
+    height: auto;
+}
+
 .title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 44px;
     color: #FFFFFF;
+    display: grid;
+    place-items: center;
 }
+/*
+.gallery {
+    width: 100%;
+    margin: 60px 50px;
+    padding-bottom: 50px;
 
+}
+*/
 
 /*====================media queries=================*/
 
@@ -45,6 +65,9 @@
 }
 
 @media screen and (max-width: 990px) {
+
+
+
     .title {
         font-size: 40px;
     }
@@ -63,10 +86,31 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+/* -- responsive pour écran de largeur inf. ou égale à 440px (version mobile) --*/   
+
+@media screen and (max-width: 440px) {
+
+    .homeMaskGroup {
+        height: 100px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .left {
+        flex: 70%;
+        flex-direction: column;
+        margin-left: 18px;
+        justify-content: baseline;
+    }
+
+    .center {
+        flex: 30%;
+    }
     .title {
         font-size: 18px;
+        margin: 0;
     }
+
 }
 
 

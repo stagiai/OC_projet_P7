@@ -8,13 +8,19 @@ import Footer from '../components/Footer'
 
 const Home =() => {
 
+    const text1 = 'Chez vous, ';
+    const text2 = 'partout et ailleurs'
+
     return (
         <div className= {HomeCSS.home} >
             <Header />
             <div className= {HomeCSS.homeMaskGroup} style={{backgroundImage:`url(${home_maskgroup})`}}>
-                <h1 className= {HomeCSS.title} >Chez vous, partout et ailleurs</h1>
+                <div  className= {HomeCSS.left}>
+                    <p  className= {HomeCSS.title}>{`${text1}${text2}`}</p>
+                </div>
+                <div  className= {HomeCSS.center}></div>
             </div>
-            <Gallery list = {housingList} />
+            <Gallery list = {housingList} className = {HomeCSS.gallery}/>
             <Footer />
         </div>
     )

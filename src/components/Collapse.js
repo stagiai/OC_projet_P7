@@ -19,7 +19,7 @@ const Collapse = (props) => {
               : <img src= {vector_close} alt= 'arrow upward' className= {CollapseCSS.vector}  />}
             </div>
           </div>
-          {open ? <div>{props.content}</div> : null}
+          {open ? <div className= {CollapseCSS.content}  >{props.content}</div> : null}
       </div>
     );
   };

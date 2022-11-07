@@ -37,7 +37,7 @@ const Housing = () => {
                     <div className= {HousingCSS.host}>
                         <div className= {HousingCSS.left}></div>
                         <div className= {HousingCSS.hostName} >{housing.host.name}</div>
-                        <img src= {host}  className= {HousingCSS.hostImg} />
+                        <img src= {host}  className= {HousingCSS.hostImg} alt= 'host'/>
                     </div>
                     <div className= {HousingCSS.rating}><Rating rating={housing.rating} /></div>
                 </div>

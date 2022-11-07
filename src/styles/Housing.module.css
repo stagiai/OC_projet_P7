@@ -4,7 +4,7 @@
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,18 +18,15 @@
     flex-direction: row;
     width: 100%;
     align-items: top;
+    margin: 20px 0px;
 }
+
 
 .mainTitle {
     flex: 80%;
     flex-direction: column;
-    justify-content: top;;
+    justify-content: top;
 
-}
-
-.location {
-    font-size: 20px;
-    color: #FF6060;
 }
 
 .title {
@@ -38,29 +35,9 @@
     color: #FF6060;
 }
 
-.descriptionTitle {
-    font-size: 28px;
-    font-weight: 500;
-    color: white;
-    background-color: #FF6060;
-    margin: 5%;
-    border-radius: 10px;
-}
-
-.equipmentTitle {
-    font-size: 28px;
-    font-weight: 500;
-    color: white;
-    background-color: #FF6060;
-    margin: 5%;
-    border-radius: 10px;
-}
-
-
-
 .location {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
+    color: #FF6060;
 }
 
 .tags {
@@ -73,6 +50,7 @@
     margin-bottom: 20px;    
 }
 
+
 .tagsItem {
     display: flex;
     width: auto;
@@ -84,6 +62,32 @@
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+    font-size: 14px;
+}
+
+.descriptionTitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #FF6060;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.equipmentTitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #FF6060;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+
+
+.location {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .mainHost {
@@ -141,23 +145,25 @@
 
 .equipments {
     list-style-type: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
-    background-color: rgb(245, 245, 245);
+    color: #FF6060;
+    margin-left: -15px;
 }
 
 .collapse {
-    width: 45%;
+    width: 48%;
     min-width: 400px;
 }
 
 .description {
-    width: 100%;
+    width: 90%;
     min-width: 350px;
     height: auto;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     color: #FF6060;
+    margin-left: 25px;
 }
 
 
@@ -188,25 +194,37 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 440px) {
     .main {
         flex-direction: column;
     }
-    .mainHost {
-        flex-direction: row-reverse;
-    }
-    .hostName {
-        font-size: 16px;
-    }
-    .hostImg {
-        width: 20px;
-        height: auto;
-    }
 
+    .mainTitle {
+        width: 100%;
+    }
     .tagsItem {
         font-size: 12px;
         margin-bottom: 8px;
     }
+    .mainHost {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between
+    }
+    .hostName {
+        flex: 15%;
+        font-size: 14px;
+    }
+    .hostImg {
+        flex: 5%;
+        width: 10px;
+        height: auto;
+    }
+    .left {
+        width: 0;
+    }
+
+
 
     .details {
         flex-direction: column;
@@ -224,9 +242,8 @@
     .equipments {
         font-size: 16px;
     }
-
     .collapse {
-        width: 100%;
+        width: 90%;
     }
 
 }

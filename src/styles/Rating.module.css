@@ -11,3 +11,17 @@
     height: auto;
     margin: 5px;
 }
+
+
+@media screen and (max-width: 440px) {
+    .rating {
+        width: 10px;
+        margin: 2px;
+    }
+
+    .notRating {
+        width: 10px;
+        margin: 2px;
+    }
+
+}
