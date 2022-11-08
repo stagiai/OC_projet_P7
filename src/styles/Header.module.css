@@ -42,9 +42,7 @@
 }
 
 
-@media screen and (max-width: 1050px) {
-}
-
+/* ------------------------------- Responsive --------------------------------*/
 
 @media screen and (max-width: 900px) {
     .navbar {
@@ -64,7 +62,7 @@
         width: 40%;
     }
     .logo {
-        width: 35%;
+        width: 30%;
     }
     .title {
         font-size: 18px;

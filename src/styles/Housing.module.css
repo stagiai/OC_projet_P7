@@ -101,7 +101,6 @@ body {
 .hostImg {
     display: flex;
     width: 20%;
-    width: auto;
     height: auto;
     margin-left: 5px;
     display: grid;
@@ -151,7 +150,15 @@ body {
 
 @media screen and (max-width: 600px) {
     .title {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .hostName {
+        width: 50%;
+        font-size: 14px;   
+    }
+    .hostImg {
+        width: auto;
+        height: auto;   
     }
 }
 
