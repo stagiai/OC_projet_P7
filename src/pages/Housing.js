@@ -1,6 +1,6 @@
 import React from 'react';
 import {useParams, Navigate} from 'react-router-dom';
-import Carousel from '../components/Carousel'
+import Slideshow from '../components/Slideshow'
 import {housingList} from '../datas/housingList';
 import HousingCSS from '../styles/Housing.module.css'
 import Header from '../components/Header'
@@ -22,7 +22,7 @@ const Housing = () => {
     return !housing ? <Navigate to= '/error' /> : 
         <div className= {HousingCSS.housing} >
             <Header />
-            <Carousel housing= {housing}/>
+            <Slideshow housing= {housing}/>
             <div className= {HousingCSS.main} >
                 <div className= {HousingCSS.mainTitle} >
                     <h2 className= {HousingCSS.title} >{housing.title}</h2>
