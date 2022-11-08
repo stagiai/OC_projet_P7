@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .home {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 20px;
+    width: 96%;
+
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -89,6 +94,12 @@
 /* -- responsive pour écran de largeur inf. ou égale à 440px (version mobile) --*/   
 
 @media screen and (max-width: 440px) {
+
+    .home {
+        width: 96%;
+    
+        margin: 10px;
+    }
 
     .homeMaskGroup {
         height: 100px;

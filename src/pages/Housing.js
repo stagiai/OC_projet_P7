@@ -43,19 +43,18 @@ const Housing = () => {
                 </div>
             </div>
             <div className= {HousingCSS.details} >
-                <div className= {HousingCSS.collapse}>
-                    <Collapse title= {<h4 className={HousingCSS.descriptionTitle}>{title1}</h4>} content ={
-                    <p className={HousingCSS.description}>{housing.description}</p>} />
-                </div>
-                <div className= {HousingCSS.collapse}>
-                    <Collapse title={<h4 className={HousingCSS.equipmentTitle}>{title2}</h4>} content= {
-                        <ul className= {HousingCSS.equipments}>
-                            {housing.equipments.map((item) =>
-                                <li>{item}</li>)
-                            }           
-                        </ul>
-                    }  />
-                </div>
+                <Collapse title= {<h4 className={HousingCSS.descriptionTitle}>{title1}</h4>} content ={
+                <p className={HousingCSS.description}>{housing.description}</p>} />
+
+
+                <Collapse title={<h4 className={HousingCSS.equipmentTitle}>{title2}</h4>} content= {
+                    <ul className= {HousingCSS.equipments}>
+                        {housing.equipments.map((item) =>
+                            <li>{item}</li>)
+                        }           
+                    </ul>
+                }  />
+
             </div>           
             <Footer />
         </div>        

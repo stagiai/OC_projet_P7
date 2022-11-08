@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .housing {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10px;
+    width: 96%;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,11 +154,6 @@
     margin-left: -15px;
 }
 
-.collapse {
-    width: 48%;
-    min-width: 400px;
-}
-
 .description {
     width: 90%;
     min-width: 350px;
@@ -169,11 +167,15 @@
 
 /*====================media queries=================*/
 
-@media screen and (max-width: 1380px) {
-
-}
 
 @media screen and (max-width: 990px) {
+
+    .title {
+        font-size: 26px;
+        font-weight: 500;
+        color: #FF6060;
+    }
+
     .details {
         flex-direction: column;
     }
@@ -195,6 +197,14 @@
 }
 
 @media screen and (max-width: 440px) {
+
+    .housing {
+        width: 96%;
+    
+        margin: 10px;
+    }
+
+
     .main {
         flex-direction: column;
     }
@@ -202,9 +212,21 @@
     .mainTitle {
         width: 100%;
     }
+
+    .title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #FF6060;
+    }
+
+    .location {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
     .tagsItem {
         font-size: 12px;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
     }
     .mainHost {
         width: 100%;
@@ -238,6 +260,7 @@
     }
     .description{
         font-size: 16px;
+        margin-left: 10px;
     }
     .equipments {
         font-size: 16px;

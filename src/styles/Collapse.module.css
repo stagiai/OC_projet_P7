@@ -43,11 +43,11 @@
     border-radius: 10px;
 }
 
-
 @media screen and (max-width: 440px) {
-    .description {
-        width: 95%;
+
+    .vector {
+        width: 10px;
     }
-
-
 }
+
+
