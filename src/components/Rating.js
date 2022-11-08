@@ -1,4 +1,5 @@
-import { FaStar} from 'react-icons/fa'
+import { Icon } from '@iconify/react';
+import starSharp from '@iconify/icons-ion/star-sharp';
 
 import RatingCSS from '../styles/Rating.module.css'
 
@@ -8,7 +9,7 @@ const Rating = (props) => {
     return (
         <div>
             {range.map((rangeElem) =>
-                rating >= rangeElem ? <span key={rangeElem.toString()}><FaStar className= {RatingCSS.rating}  /></span> : <span key={rangeElem.toString()}><span></span><FaStar className= {RatingCSS.notRating}  /></span>
+                rating >= rangeElem ? <span key={rangeElem.toString()}><Icon icon={starSharp} className= {RatingCSS.rating}  /></span> : <span key={rangeElem.toString()}><span></span><Icon icon={starSharp} className= {RatingCSS.notRating}  /></span>
             )}
         </div>
     )

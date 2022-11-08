@@ -12,7 +12,7 @@
     margin: 5px;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1050px) {
     .rating {
         width: 20px;
         margin: 4px;
@@ -24,6 +24,18 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .rating {
+        width: 14px;
+        margin: 2px;
+    }
+
+    .notRating {
+        width: 14px;
+        margin: 2px;
+    }
+
+}
 
 @media screen and (max-width: 440px) {
     .rating {

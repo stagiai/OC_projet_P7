@@ -41,6 +41,11 @@
     text-decoration: underline;
 }
 
+
+@media screen and (max-width: 1050px) {
+}
+
+
 @media screen and (max-width: 900px) {
     .navbar {
         width: 35%;
@@ -71,7 +76,7 @@
 
 @media screen and (max-width: 440px) {
     .navbar {
-        width: 40%;
+        width: 45%;
     }
     .logo {
         width: 35%;

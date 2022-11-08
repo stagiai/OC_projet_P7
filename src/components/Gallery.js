@@ -3,6 +3,8 @@ import Card from './Card'
 
 const Gallery = (props) => (
 
+
+
     <div className= {GalleryCSS.gallery}>
         {props.list.map((card) => (
             <div  className= {GalleryCSS.card}>
@@ -11,6 +13,7 @@ const Gallery = (props) => (
             
         ))}
     </div>
+
 );
 
 export default Gallery;
