@@ -23,10 +23,10 @@ const About =() => (
 
         </div>
         <div className= {AboutCSS.details} >
-            <Collapse title= {<h4 className={AboutCSS.title}>{title1}</h4>} content= {<p className= {AboutCSS.content}>{text1}</p>}/>
-            <Collapse title= {<h4 className={AboutCSS.title}>{title2}</h4>} content= {<p className= {AboutCSS.content}>{text2}</p>}/>
-            <Collapse title= {<h4 className={AboutCSS.title}>{title3}</h4>} content= {<p className= {AboutCSS.content}>{text3}</p>}/>
-            <Collapse title= {<h4 className={AboutCSS.title}>{title4}</h4>} content= {<p className= {AboutCSS.content}>{text4}</p>}/>
+            <Collapse title= {title1} content= {text1}/>
+            <Collapse title= {title2} content= {text2}/>
+            <Collapse title= {title3} content= {text3}/>
+            <Collapse title= {title4} content= {text4}/>
         </div>
         <Footer />
     </div>

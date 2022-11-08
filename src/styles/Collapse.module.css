@@ -16,6 +16,7 @@
     height: 40px;
     background-color: #FF6060;
     border-radius: 5px;
+    font-size: 22px;
 }
 
 .right {
@@ -47,6 +48,7 @@
     justify-content: space-around;
     height: auto;
     background-color: rgb(245, 245, 245);
+    font-size: 20px;
     border-radius: 5px;
 }
 
@@ -63,6 +65,14 @@
 
     .vector {
         width: 10px;
+    }
+
+    .titleContainer {
+        font-size: 18px;
+    }
+
+    .contentContainer {
+        font-size: 14px;
     }
 }
 
