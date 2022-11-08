@@ -75,17 +75,16 @@ body {
 }
 
 .mainHost {
-    width: 20%;
+    display: flex;
     flex-direction: column;
-    justify-content: top;
-
+    align-items: right;
 }
 
 .host {
     display: flex;
     flex-direction: row;
     justify-content: right;
-
+    width: auto;
 }
 
 
@@ -100,10 +99,13 @@ body {
 }
 
 .hostImg {
+    display: flex;
     width: 20%;
-    width: 50px;
+    width: auto;
     height: auto;
     margin-left: 5px;
+    display: grid;
+    place-items: center;
 
 }
 
@@ -154,23 +156,16 @@ body {
 }
 
 @media screen and (max-width: 440px) {
-
     .housing {
         width: 96%;    
         margin: 10px;
     }
-
-
     .main {
         flex-direction: column;
     }
-
     .mainTitle {
         width: 100%;
-    }
-
-    
-
+    }  
     .title {
         font-size: 18px;
         font-weight: 500;
@@ -191,17 +186,16 @@ body {
         flex-direction:row-reverse;
         justify-content: space-between;
     }
-
-
     .host {
-        width: 50%;
-        margin: 0;
+        width: 35%;
+        justify-content: space-between;
 
     }
 
     .rating {
         width: 50%;
-        margin: 0;
+        justify-content: left;
+
     }
 
     .hostName {
