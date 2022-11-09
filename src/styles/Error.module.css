@@ -15,6 +15,7 @@ body {
     font-family: Montserrat;
     color: #FF6060;
     margin: 20px;
+    margin-left: 25px;
 
 }
 
@@ -88,7 +89,6 @@ body {
 @media screen and (max-width: 440px) {
     .error {
         width: 96%;    
-        margin: 10px;
     }
     .code {
         font-size: 100px;

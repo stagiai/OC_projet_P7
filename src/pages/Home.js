@@ -12,15 +12,18 @@ const Home =() => {
     const text2 = 'partout et ailleurs'
 
     return (
-        <div className= {HomeCSS.home} >
-            <Header />
-            <div className= {HomeCSS.homeMaskGroup} style={{backgroundImage:`url(${home_maskgroup})`}}>
-                <div  className= {HomeCSS.left}>
-                    <p  className= {HomeCSS.title}>{`${text1}${text2}`}</p>
+        <div>
+            <div className= {HomeCSS.home} >
+                <Header />
+                <div className= {HomeCSS.homeMaskGroup} style={{backgroundImage:`url(${home_maskgroup})`}}>
+                    <div  className= {HomeCSS.left}>
+                        <p  className= {HomeCSS.title}>{`${text1}${text2}`}</p>
+                    </div>
+                    <div  className= {HomeCSS.center}></div>
                 </div>
-                <div  className= {HomeCSS.center}></div>
+                <Gallery list = {housingList} className = {HomeCSS.gallery}/>
+
             </div>
-            <Gallery list = {housingList} className = {HomeCSS.gallery}/>
             <Footer />
         </div>
     )

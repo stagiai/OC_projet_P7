@@ -5,13 +5,16 @@ import Footer from '../components/Footer'
 
 const Error = () => {
     return (
-    <div className= {ErrorCSS.error} >
-        <Header />
-        <div className= {ErrorCSS.code} >404</div>
-        <p className= {ErrorCSS.message} >Oups! La page que vous demandez n'existe pas</p>
-        <Link to ='/'  className= {ErrorCSS.link}>Retourner à la page d'accueil</Link>
-        <Footer />
-    </div>
+        <div>
+            <div className= {ErrorCSS.error} >
+                <Header />
+                <div className= {ErrorCSS.code} >404</div>
+                <p className= {ErrorCSS.message} >Oups! La page que vous demandez n'existe pas</p>
+                <Link to ='/'  className= {ErrorCSS.link}>Retourner à la page d'accueil</Link>
+
+            </div>
+            <Footer />
+        </div>
     )
 };
 

@@ -8,6 +8,7 @@ body {
 .housing {
     width: 96%;
     margin: 20px;
+    margin-left: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;

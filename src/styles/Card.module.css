@@ -1,11 +1,11 @@
 
 .card {
-    height: 340px;
-    width: 340px;
+    height: 310px;
+    width: 310px;
     border-radius: 10px;
     background: linear-gradient(180deg, #FF6060 0%,  #FF6060 60%, rgba(0, 0, 0, 0.6) 100%);
     display: flex;
-    margin: 50px 25px 30px 30px;
+    margin: 50px 25px 25px 25px;
     text-decoration: none;   
 }
 

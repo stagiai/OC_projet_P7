@@ -17,20 +17,24 @@ const text4= "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes
 
 
 const About =() => (
-    <div className= {AboutCSS.about} >
-        <Header />
-        <div className= {AboutCSS.aboutMaskGroup} style={{backgroundImage:`url(${about_maskgroup})`}}>
+    <div>
 
-        </div>
-        <div className= {AboutCSS.details} >
-            <Collapse title= {title1} content= {text1}/>
-            <Collapse title= {title2} content= {text2}/>
-            <Collapse title= {title3} content= {text3}/>
-            <Collapse title= {title4} content= {text4}/>
+
+        <div className= {AboutCSS.about} >
+            <Header />
+            <div className= {AboutCSS.aboutMaskGroup} style={{backgroundImage:`url(${about_maskgroup})`}}>
+
+            </div>
+            <div className= {AboutCSS.details} >
+                <Collapse title= {title1} content= {text1}/>
+                <Collapse title= {title2} content= {text2}/>
+                <Collapse title= {title3} content= {text3}/>
+                <Collapse title= {title4} content= {text4}/>
+            </div>
+
         </div>
         <Footer />
     </div>
-
 
 );
 export default About;
